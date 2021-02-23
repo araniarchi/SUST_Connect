@@ -1,0 +1,83 @@
+class cur_student(models.Model):
+    first_name = models.CharField(null=True, blank=True, default=None, max_length=55)
+    last_name = models.CharField(null=True, blank=True, default=None, max_length=55)
+    date_of_birth = models.CharField(null=True, blank=True, default=None, max_length=55)
+    blood_group = models.CharField(null=True, blank=True, default=None, max_length=55)
+    gender = models.CharField(null=True, blank=True, default=None, max_length=55)
+    home_town = models.CharField(null=True, blank=True, default=None, max_length=55)
+    Current_City = models.CharField(null=True, blank=True, default=None, max_length=55)
+
+    Picture = models.FileField(null=True, blank=True, default=None, upload_to='student/')
+    about_me = models.TextField(null=True, blank=True, default=None)
+
+    skill_name = models.TextField(null=True, blank=True, default=None)
+
+
+    department = models.CharField(null=True, blank=True, default=None, max_length=55)
+    sust_reg_no = models.CharField(null=True, blank=True, default=None, max_length=55)
+    session = models.CharField(null=True, blank=True, default=None, max_length=55)
+    cur_semester = models.CharField(null=True, blank=True, default=None, max_length=55)
+
+
+    contact_no = models.CharField(null=True, blank=True, default=None, max_length=55)
+    Linkedin_link = models.CharField(null=True, blank=True, default=None, max_length=55)
+    Github_Link = models.CharField(null=True, blank=True, default=None, max_length=55)
+
+    # Email_address = models.CharField(null=True, blank=True, default=None, max_length=55)
+
+
+
+
+
+class alumni(models.Model):
+
+    first_name = models.CharField(null=True, blank=True, default=None, max_length=55)
+    last_name = models.CharField(null=True, blank=True, default=None, max_length=55)
+    date_of_birth = models.CharField(null=True, blank=True, default=None, max_length=55)
+    blood_group = models.CharField(null=True, blank=True, default=None, max_length=55)
+    gender = models.CharField(null=True, blank=True, default=None, max_length=55)
+    home_town = models.CharField(null=True, blank=True, default=None, max_length=55)
+    Current_City = models.CharField(null=True, blank=True, default=None, max_length=55)
+
+    Picture = models.FileField(null=True, blank=True, default=None, upload_to='student/')
+    about_me = models.TextField(null=True, blank=True, default=None)
+
+    skill_name = models.CharField(null=True, blank=True, default=None, max_length=55)
+
+    department = models.CharField(null=True, blank=True, default=None, max_length=55)
+    sust_reg_no = models.CharField(null=True, blank=True, default=None, max_length=55)
+    session = models.CharField(null=True, blank=True, default=None, max_length=55)
+    graduated_year = models.CharField(null=True, blank=True, default=None, max_length=55)
+
+
+    MSc_Institute_name = models.CharField(null=True, blank=True, default=None, max_length=55)
+    MSc_Institute_Country = models.CharField(null=True, blank=True, default=None, max_length=55)
+    MSc_start_date = models.CharField(null=True, blank=True, default=None, max_length=55)
+    MSc_end_date = models.CharField(null=True, blank=True, default=None, max_length=55)
+
+
+    Phd_Institute_name = models.CharField(null=True, blank=True, default=None, max_length=55)
+    Phd_Institute_Country = models.CharField(null=True, blank=True, default=None, max_length=55)
+    Phd_start_date = models.CharField(null=True, blank=True, default=None, max_length=55)
+    Phd_end_date = models.CharField(null=True, blank=True, default=None, max_length=55)
+
+
+    Research_area = models.CharField(null=True, blank=True, default=None, max_length=55)
+    Published_Paper = models.CharField(null=True, blank=True, default=None, max_length=55)
+    Published_Journal = models.CharField(null=True, blank=True, default=None, max_length=55)
+
+
+    Job_Institute_or_Company = models.CharField(null=True, blank=True, default=None, max_length=55)
+    Job_Position = models.CharField(null=True, blank=True, default=None, max_length=55)
+    Job_start_date = models.CharField(null=True, blank=True, default=None, max_length=55)
+    Job_end_date = models.CharField(null=True, blank=True, default=None, max_length=55)
+
+
+    Linkedin_link = models.CharField(null=True, blank=True, default=None, max_length=55)
+    github_Link = models.CharField(null=True, blank=True, default=None, max_length=55)
+    contact_no = models.CharField(null=True, blank=True, default=None, max_length=55)
+
+    # Email_address = models.CharField(null=True, blank=True, default=None, max_length=55)
+
+
+

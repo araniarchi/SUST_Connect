@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="612b7b79-405b-44a5-9021-b01a12acc879" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="Setup Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>login</find>
+      <find>regis</find>
+      <find>logout</find>
+      <find>compny</find>
+      <find>search</find>
+      <find>uou-block-6a</find>
+      <find>row</find>
+      <find>education</find>
+      <find>user-profile-bnr</find>
+      <find>profile-bnr</find>
+      <find>id</find>
+      <find>update</find>
+      <find>msc</find>
+      <find>p</find>
+      <find>rese</find>
+      <find>resea</find>
+      <find>phd</find>
+      <find>item</find>
+      <find>re</find>
+      <find>net</find>
+      <find>updat</find>
+      <find>logou</find>
+      <find>eee:pho</find>
+      <find>eee:phd</find>
+    </findStrings>
+  </component>
+  <component name="ProjectId" id="1bgo2evQPz9hjj35vUMsPitI50H" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/New folder/pagerank" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="H:\test2\eee\templates\eee" />
+      <recent name="H:\test2\eee\static\eee\images" />
+      <recent name="H:\test2\eee\static\eee" />
+      <recent name="H:\test2\media\images" />
+      <recent name="H:\test2\media\student" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Django server.test2">
+    <configuration name="starting.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/test2/eee/templates/eee/starting.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="test2" type="Python.DjangoServer" factoryName="Django server">
+      <module name="test2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Django server.test2" />
+      <item itemvalue="JavaScript Debug.starting.html" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.starting.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="612b7b79-405b-44a5-9021-b01a12acc879" name="Default Changelist" comment="" />
+      <created>1562309123827</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1562309123827</updated>
+      <workItem from="1562309129543" duration="26316000" />
+      <workItem from="1562354003336" duration="7196000" />
+      <workItem from="1562388752818" duration="7676000" />
+      <workItem from="1562406067872" duration="448000" />
+      <workItem from="1562406545189" duration="236000" />
+      <workItem from="1562406925745" duration="713000" />
+      <workItem from="1562407697043" duration="244000" />
+      <workItem from="1562408245531" duration="44000" />
+      <workItem from="1562408385240" duration="5843000" />
+      <workItem from="1562416393684" duration="38711000" />
+      <workItem from="1562491671949" duration="62190000" />
+      <workItem from="1589062903581" duration="270000" />
+      <workItem from="1589804407134" duration="29000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1589804433417">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1589804433417" />
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1589804408060">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1589804408060" />
+  </component>
+</project>

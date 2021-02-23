@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Mirrored from new.uouapps.com/tiger-html/listing-filter.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 May 2019 04:54:31 GMT -->
+<head>
+     {% load staticfiles %}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>Search</title>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!-- Fonts Online -->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+
+<!-- Style Sheet -->
+<link rel="stylesheet" href="{% static 'eee/css/owl.carousel.css' %}">
+<link rel="stylesheet" href="{% static 'eee/css/main-style.css' %}">
+<link rel="stylesheet" href="{% static 'eee/css/style.css' %}">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<div id="main-wrapper">
+
+
+  <div class="box-shadow-for-ui">
+    <div class="uou-block-2b">
+      <div class="container">  <a href="#" class="mobile-sidebar-button mobile-sidebar-toggle"><span></span></a>
+        <nav class="nav">
+          <ul class="sf-menu">
+{#            <li><a href="{% url 'eee:mainpage' %}"><i class="fa  fa-home"></i></a></li>#}
+              <li> <a href="{% url 'eee:mainpage' %}">Home</a> </li>
+            <li class="active"> <a href="{% url 'eee:listing_filter' %}">Search</a> </li>
+            <li><a href="{% url 'eee:profile' %}">USER PROFILE</a></li>
+{#              <li><a href="{% url 'eee:contact' %}>CONTACT</a></li>#}
+            <li><a href="{% url 'eee:logout' %}">LOGOUT</a></li>
+            <!--<li><a href="gui-kit.html">GUI KIT</a></li>-->
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- end .uou-block-2b -->
+  </div>
+
+  <!-- SUB Banner -->
+  <div class="profile-bnr sub-bnr user-profile-bnr">
+    <div class="position-center-center">
+      <div class="container">
+        <h2>Search Members</h2>
+      </div>
+    </div>
+  </div>
+
+{#    #}
+<form  role="search" method="get" action="{% url 'eee:stu_search' %}">
+
+    <div class="search-pro">
+        <div class="map-search">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <!--<div class="map-toggleButton"> <i class="fa fa-bars"></i> </div>-->
+                <div class="map-search-fields">
+
+
+                  <div class="field custom-select-box">
+                    <input style="width: 350px;float: right;border-color: black" type="text" placeholder="Country / Research Area / Skill / Institute" name="q" value="{{ request.GET.q }}">
+                  </div>
+                </div>
+                <div class="search-button">
+                  <button>Search </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</form>
+
+
+  <!-- Members -->
+  <section class="pro-mem">
+    <div class="container pb30">
+      <h3>Members</h3>
+      <div class="row">
+
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<div class="uou-block-4e">
+  <div class="container">
+    <div class="row">
+
+<!-- end .uou-block-4e -->
+
+{#<div class="uou-block-4a secondary dark">#}
+  <div align="center" class="container">
+
+    <p>Powered by SUST Higher Study Group.</p>
+  </div>
+{#</div>#}
+
+
+
+</body>
+
+
+</html>

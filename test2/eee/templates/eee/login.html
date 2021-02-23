@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Login</title>
+<meta charset="UTF-8">
+{% load staticfiles %}
+
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<script src="http://mymaplist.com/js/vendor/TweenLite.min.js"></script>
+<!-- This is a very simple parallax effect achieved by simple CSS 3 multiple backgrounds, made by http://twitter.com/msurguy -->
+<link rel="stylesheet" type="text/css" href="{% static 'eee/css/registration.css' %}"   />
+
+<script src = "{% static 'eee/js/login.js' %}"></script>
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body {
+        font-family: "Lato", sans-serif
+    }
+
+    .mySlides {
+        display: none
+    }
+    .vertical-offset-100{
+    padding-top:100px;
+}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="{% url 'eee:index' %}" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+{#    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BAND</a>#}
+{#    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TOUR</a>#}
+{#    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>#}
+{#    <div class="w3-dropdown-hover w3-hide-small">#}
+{#      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>#}
+{##}
+{#              <div class="w3-dropdown-content w3-bar-block w3-card-4">#}
+{#        <a href="#" class="w3-bar-item w3-button">Merchandise</a>#}
+{#        <a href="#" class="w3-bar-item w3-button">Extras</a>#}
+{#        <a href="#" class="w3-bar-item w3-button">Media</a>#}
+{#      </div>#}
+{#    </div>#}
+      <div>
+          <style>
+              .hh{
+                  float: right;
+              }
+          </style>
+                  <a href="{% url 'eee:registration' %}" class="w3-right w3-button">Register</a>
+                  <a href="{% url 'eee:login' %}" class="w3-right w3-button">Login</a>
+
+{#          <button class="hh">Login</button>#}
+{#          <a href="#" class="haha"></a>#}
+      </div>
+{#    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>#}
+  </div>
+</div>
+
+<div class="container">
+    <div class="row vertical-offset-100">
+    	<div class="col-md-4 col-md-offset-4">
+    		<div class="panel panel-default">
+			  	<div class="panel-heading">
+			    	<h3 class="panel-title">Please sign in</h3>
+			 	</div>
+			  	<div class="panel-body">
+			    	<form accept-charset="UTF-8" role="form" method="post" action="#">
+                        {% csrf_token %}
+                    <fieldset>
+			    	  	<div class="form-group">
+			    		    <input class="form-control" placeholder="username" name="username" type="text" required>
+			    		</div>
+			    		<div class="form-group">
+			    			<input class="form-control" placeholder="Password" name="password" type="password" value="" required>
+			    		</div>
+{#			    		<div class="checkbox">#}
+{#			    	    	<label>#}
+{#			    	    		<input name="remember" type="checkbox" value="Remember Me"> Remember Me#}
+{#			    	    	</label>#}
+{#			    	    </div>#}
+			    		<input class="btn btn-lg btn-success btn-block" type="submit" value="Login">
+			    	</fieldset>
+			      	</form>
+			    </div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+<body>
+
+{% load staticfiles %}
+
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black pip w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="{% url 'eee:mainpage' %}" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="{% url 'eee:listing_filter' %}" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Search</a>
+    <a href="{% url 'eee:profile' %}" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Profile</a>
+
+{#    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>#}
+{#    <div class="w3-dropdown-hover w3-hide-small">#}
+{#      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>#}
+{##}
+{#              <div class="w3-dropdown-content w3-bar-block w3-card-4">#}
+{#        <a href="#" class="w3-bar-item w3-button">Merchandise</a>#}
+{#        <a href="#" class="w3-bar-item w3-button">Extras</a>#}
+{#        <a href="#" class="w3-bar-item w3-button">Media</a>#}
+{#      </div>#}
+{#    </div>#}
+      <div>
+          <style>
+              .hh{
+                  float: right;
+              }
+          </style>
+                  <a href="{% url 'eee:logout' %}" class="w3-right w3-button">Logout</a>
+
+
+{#          <button class="hh">Login</button>#}
+{#          <a href="#" class="haha"></a>#}
+      </div>
+{#    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>#}
+  </div>
+</div>
+
+
+<!-- Header -->
+<header class="w3-container w3-blue w3-center" style="padding:128px 16px">
+    <h1 class="w3-margin w3-jumbo" align="center"><b>SUST Student Record</b></h1>
+{#  <p class="w3-xlarge">Template by w3.css</p>#}
+  {#  <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Welcome</button>#}
+    <h2 class="w3-text-black" align="center"><b>Welcome</b></h2>
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>About SUST</h1>
+      <h5 class="w3-padding-32">Shahjalal University of Science and Technology (SUST) was established in 1986. The only university of its kind at that time, it started it''s journey on the 13th of February 1991 with only three departments: Physics, Chemistry and Economics, 13 teachers and 205 students.</h5>
+
+      <p class="w3-text-grey"> It has now expanded to 7 schools, 27 departments and two institutes.
+         It introduced the semester system from the 1996-97 session and there was a remarkable improvement in the quality of education after the introduction of this system, which was visible even in the national arena. Every student from SUST has to take two language courses, one in Bangla and the other one in English. Every student also has to take two computer courses, one for computer literacy and the other to learn a computer language.
+       The computer center of SUST offers courses to every employees and one can say, without any hesitation that SUST is the most IT enabled university in this country. SUST has started it's graduate programs by offering masters degree to graduating bachelors of most of the departments.
+      </p>
+
+    </div>
+
+    <div class="w3-third w3-center">
+{#      <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>#}
+        <img src="{% static 'eee/images/uni1.jpg' %}" style="float:right;width:300px;height:250px;">
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+{#      <i class="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right"></i>#}
+        <img src="{% static 'eee/images/uni2.jpg' %}" style="float:left;width:300px;height:250px;">
+    </div>
+
+    <div class="w3-twothird">
+      <h1>Our Website</h1>
+      <h5 class="w3-padding-32"> Our website helps the students or teachers to know about other current students or alumnis.   </h5>
+
+      <p class="w3-text-grey">
+          The website provides the education, job, research related information. Users can know about others skill or experience. As well as, it also lets the user search others on the base of any country, university, skills, research topics, published papers etc.
+          This site is overall helpful towards other students and teachers for various reasons by providing necessary information which can be difficult to find otherwise.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Connecting SUST students</h1>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">
+  <div class="w3-xlarge w3-padding-32">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+ </div>
+ <p>Powered by SUST Higher Study Group</p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>

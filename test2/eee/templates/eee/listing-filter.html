@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Mirrored from new.uouapps.com/tiger-html/listing-filter.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 May 2019 04:54:31 GMT -->
+<head>
+     {% load staticfiles %}
+
+{#  doctor   #}
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body, h1, h2, h3, h4, h5, h6 {
+        font-family: "Raleway", sans-serif
+    }
+</style>
+
+{#    end profile#}
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" type="text/css" href="{% static 'eee/cse/css/animate.css' %}"/>
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" type="text/css" href="{% static 'eee/cse/css/icomoon.css' %}"/>
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" type="text/css" href="{% static 'eee/cse/css/bootstrap.css' %}"/>
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" type="text/css" href="{% static 'eee/cse/css/magnific-popup.css' %}"/>
+    <!-- Owl Carousel  -->
+    <link rel="stylesheet" type="text/css" href="{% static 'eee/cse/css/owl.carousel.min.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'eee/cse/css/owl.theme.default.min.css' %}"/>
+    <!-- Flexslider  -->
+    <link rel="stylesheet" type="text/css" href="{% static 'eee/cse/css/flexslider.css' %}"/>
+    <!-- Flaticons  -->
+    <link rel="stylesheet" type="text/css" href="{% static 'eee/cse/fonts/flaticon/font/flaticon.css' %}"/>
+    <!-- Theme style  -->
+    <link rel="stylesheet" type="text/css" href="{% static 'eee/cse/css/style.css' %}"/>
+
+
+    {#    <link rel="stylesheet" href="{% static 'cse/contact/style.css' %}">#}
+
+
+    <!-- Modernizr JS -->
+    <script src="{% static 'eee/cse/js/modernizr-2.6.2.min.js' %}"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+	<script src="{% static 'eee/cse/js/respond.min.js' %}"></script>
+	<![endif]-->
+
+
+    <style type="text/css">
+        article {
+            float: left;
+        {#text-align: left;#}{#padding: 50px;#} width: 50%;
+        {#background-color: #f1f1f1;#} height: 300px; /* only for demonstration, should be removed */
+        }
+    </style>
+
+
+
+
+
+
+
+{#    #}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>Search</title>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!-- Fonts Online -->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+
+<!-- Style Sheet -->
+<link rel="stylesheet" href="{% static 'eee/css/owl.carousel.css' %}">
+<link rel="stylesheet" href="{% static 'eee/css/main-style.css' %}">
+<link rel="stylesheet" href="{% static 'eee/css/style.css' %}">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<div id="main-wrapper">
+
+
+  <div class="box-shadow-for-ui">
+    <div class="uou-block-2b">
+      <div class="container">  <a href="#" class="mobile-sidebar-button mobile-sidebar-toggle"><span></span></a>
+        <nav class="nav">
+          <ul class="sf-menu">
+{#            <li><a href="{% url 'eee:mainpage' %}"><i class="fa  fa-home"></i></a></li>#}
+              <li> <a href="{% url 'eee:mainpage' %}">Home</a> </li>
+            <li class="active"> <a href="{% url 'eee:listing_filter' %}">Search</a> </li>
+            <!--<li> <a href="index-2.html">Pages</a>
+              <ul>
+                <li><a href="profile_company.html">Profile Company</a></li>
+                <li><a href="profile_company-no-tabs.html">Profile Company No Tabs</a></li>
+                <li><a href="user-dashboard(connections)(hotkeys-disabled).html">User Dashboard 1</a></li>
+                <li><a href="user-dashboard(connections)(hotkeys-enabled).html">User Dashboard 2</a></li>
+                <li><a href="user-dashboard(followers).html">User Dashboard 3</a></li>
+                <li><a href="user-dashboard(following).html">User Dashboard 4</a></li>
+                <li><a href="blog-post.html">Blog Post</a></li>
+              </ul>
+            </li>
+              -->
+            <li><a href="{% url 'eee:profile' %}"}>USER PROFILE</a></li>
+{#              <li><a href="{% url 'eee:contact' %}"}>CONTACT</a></li>#}
+            <li><a href="{% url 'eee:logout' %}">LOGOUT</a></li>
+            <!--<li><a href="gui-kit.html">GUI KIT</a></li>-->
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- end .uou-block-2b -->
+  </div>
+
+  <!-- SUB Banner -->
+  <div class="profile-bnr sub-bnr user-profile-bnr">
+    <div class="position-center-center">
+      <div class="container">
+        <h2>Search Members</h2>
+      </div>
+    </div>
+  </div>
+
+{#    #}
+
+<form  role="search" method="get" action="{% url 'eee:stu_search' %}">
+
+    <div class="search-pro">
+        <div class="map-search">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <!--<div class="map-toggleButton"> <i class="fa fa-bars"></i> </div>-->
+                <div class="map-search-fields">
+
+
+                  <div class="field custom-select-box">
+                    <input style="width: 350px;float: right;border-color: black" type="text" placeholder="Country / Research Area / Skill / Institute" name="q" value="{{ request.GET.q }}">
+                  </div>
+                </div>
+                <div class="search-button">
+                  <button>Search Members</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</form>
+
+
+
+{#    #}
+
+{#  <!-- search -->#}
+{#  <div class="search-pro">#}
+{#    <div class="map-search">#}
+{#      <div class="container">#}
+{#        <div class="row">#}
+{#          <div class="col-md-12">#}
+{#            <!--<div class="map-toggleButton"> <i class="fa fa-bars"></i> </div>-->#}
+{#            <div class="map-search-fields">#}
+{#              <div class="field">#}
+{#                <input type="text" placeholder="Keyword">#}
+{#              </div>#}
+{#              <div class="field">#}
+{#                <input type="text" placeholder="Location">#}
+{#              </div>#}
+{#              <div class="field custom-select-box">#}
+{#                <input style="" type="text" placeholder="Profession">#}
+{#              </div>#}
+{#            </div>#}
+{#            <div class="search-button">#}
+{#              <button>Search Members</button>#}
+{#            </div>#}
+{#          </div>#}
+{#        </div>#}
+{#      </div>#}
+{#    </div>#}
+{#  </div>#}
+
+  <!-- Members -->
+{#  <section class="pro-mem">#}
+{#    <div class="container pb30">#}
+{#      <h3>Members</h3>#}
+{#      <div class="row">#}
+{#          {% for item in  allstu%}#}
+{#            <div class="col-sm-3">#}
+{#              <div class="uou-block-6a"> <img src="{{ item.photos.url }}" alt="">#}
+{#                <h6>{{ item.first_name }} {{ item.last_name }} <span>{{ item.department }}</span></h6>#}
+{#                <p><i class="fa fa-map-marker"></i> {{ item.session }}</p>#}
+{#              </div>#}
+{#              <!-- end .uou-block-6a -->#}
+{#            </div>#}
+{#          {% endfor %}#}
+{##}
+{#      </div>#}
+{#    </div>#}
+{#  </section>#}
+                <div class="row">
+                {% for item in allstu %}
+                    <div class="col-md-3 col-sm-6 col-xs-12 animate-box text-center">
+                        <div class="doctor">
+                            <img class="staff-img" src="{{ item.photos.url }}">
+                            <div class="desc">
+                                <h3> {{ item.first_name }} {{ item.last_name }}</h3>
+                                <span>{{ item.department }}</span>
+                                <span>{{ item.session }}</span>
+{#                                <span>{{ item.qualification }}</span>#}
+                                <h4>Contact Information:</h4>
+                                <span>Phone: {{ item.contact_no }}</span>
+                                <span>Email: {{ item.email }}</span>
+
+
+
+                                <form action="{% url 'eee:phd' item.id %}" method="post"
+                                      style="display: inline;">
+                                    {% csrf_token %}
+{#                                    <input type="hidden" name="doctor_id" value="{{ item.doctor_id }}"/>#}
+                                     <input type="submit" value="View full profile..." class="btn btn-primary">
+
+                                </form>
+                            </div>
+
+
+                        </div>
+                    </div>
+                {% endfor %}
+                    {% for item in allstu2 %}
+                    <div class="col-md-3 col-sm-6 col-xs-12 animate-box text-center">
+                        <div class="doctor">
+                            <img class="staff-img" src="{{ item.photos.url }}">
+                            <div class="desc">
+                                <h3>Dr. {{ item.first_name }} {{ item.last_name }}</h3>
+                                <span>{{ item.department }}</span>
+                                <span>{{ item.session }}</span>
+{#                                <span>{{ item.qualification }}</span>#}
+                                <h4>Contact Information:</h4>
+                                <span>Phone: {{ item.contact_no }}</span>
+                                <span>Email: {{ item.email }}</span>
+
+
+
+                                <form action="{% url 'eee:phd' item.id %}" method="post"
+                                      style="display: inline;">
+                                    {% csrf_token %}
+{#
+                                     <input type="submit" value="View full profile..." class="btn btn-primary">
+
+                                </form>
+                            </div>
+
+
+                        </div>
+                    </div>
+                {% endfor %}
+
+            </div>
+</div>
+
+
+<div class="uou-block-4e">
+  <div class="container">
+    <div class="row">
+
+<div class="uou-block-4a secondary dark">
+  <div class="container">
+
+    <p>Powered by SUST Higher Study Group.</p>
+  </div>
+</div>
+
+<div class="gototop js-top">
+    <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+</div>
+
+<!-- jQuery -->
+<script src="{% static 'eee/cse/js/jquery.min.js' %}"></script>
+<!-- jQuery Easing -->
+<script src="{% static 'eee/cse/js/jquery.easing.1.3.js' %}"></script>
+<!-- Bootstrap -->
+<script src="{% static 'eee/cse/js/bootstrap.min.js' %}"></script>
+<!-- Waypoints -->
+<script src="{% static 'eee/cse/js/jquery.waypoints.min.js' %}"></script>
+<!-- Stellar Parallax -->
+<script src="{% static 'eee/cse/js/jquery.stellar.min.js' %}"></script>
+<!-- Carousel -->
+<script src="{% static 'eee/cse/js/owl.carousel.min.js' %}"></script>
+<!-- Flexslider -->
+<script src="{% static 'eee/cse/js/jquery.flexslider-min.js' %}"></script>
+<!-- countTo -->
+<script src="{% static 'eee/cse/js/jquery.countTo.js' %}"></script>
+<!-- Magnific Popup -->
+<script src="{% static 'eee/cse/js/jquery.magnific-popup.min.js' %}"></script>
+
+<script src="{% static 'eee/cse/js/magnific-popup-options.js' %}"></script>
+<!-- Sticky Kit -->
+<script src="{% static 'eee/cse/js/sticky-kit.min.js' %}"></script>
+<!-- Main -->
+<script src="{% static 'eee/cse/js/main.js' %}"></script>
+
+
+<script src="{% static 'eee/cse/js/modernizr-2.6.2.min.js' %}"></script>
+
+
+<script src="{% static 'eee/cse/js/respond.min.js' %}"></script>
+
+
+{#<script src="{% static 'cse/js/google_map.js' %}"></script>#}
+<script src="{% static 'eee/cse/js/map-promodi.js' %}"></script>
+
+{#<!-- Scripts --> #}
+{#<script src="https://maps.googleapis.com/maps/api/js"></script> #}
+{#<script src="js/jquery-2.1.3.min.js"></script> #}
+{#<script src="js/bootstrap.js"></script> #}
+{#<script src="js/plugins/superfish.min.js"></script> #}
+{#<script src="js/jquery.ui.min.js"></script> #}
+{#<script src="js/plugins/rangeslider.min.js"></script> #}
+{#<script src="js/plugins/jquery.flexslider-min.js"></script> #}
+{#<script src="js/uou-accordions.js"></script> #}
+{#<script src="js/uou-tabs.js"></script> #}
+{#<script src="js/plugins/select2.min.js"></script> #}
+{#<script src="js/owl.carousel.min.js"></script> #}
+{#<script src="js/gmap3.min.js"></script> #}
+{#<script src="js/scripts.js"></script>#}
+</body>
+
+</html>
